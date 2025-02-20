@@ -1,0 +1,120 @@
+2025-02-21T00:04:21.266+05:30  INFO 463 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Starting UserapiApplicationTests using Java 17.0.6 with PID 463 (started by appanikaushik in /Users/appanikaushik/Downloads/userapi)
+2025-02-21T00:04:21.268+05:30  INFO 463 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T00:04:21.697+05:30  INFO 463 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-21T00:04:21.717+05:30  INFO 463 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-02-21T00:04:21.983+05:30  INFO 463 --- [userapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-21T00:04:22.015+05:30  INFO 463 --- [userapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-21T00:04:22.031+05:30  INFO 463 --- [userapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-21T00:04:22.153+05:30  INFO 463 --- [userapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-21T00:04:22.166+05:30  INFO 463 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-21T00:04:22.246+05:30  INFO 463 --- [userapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-21T00:04:22.247+05:30  INFO 463 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-21T00:04:22.259+05:30  WARN 463 --- [userapi] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-21T00:04:22.268+05:30  INFO 463 --- [userapi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-21T00:04:22.602+05:30  INFO 463 --- [userapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-21T00:04:22.626+05:30  INFO 463 --- [userapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:04:22.789+05:30  INFO 463 --- [userapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-21T00:04:23.407+05:30  WARN 463 --- [userapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-21T00:04:23.765+05:30  INFO 463 --- [userapi] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-21T00:04:23.783+05:30  INFO 463 --- [userapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-21T00:04:23.819+05:30  INFO 463 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Started UserapiApplicationTests in 2.688 seconds (process running for 3.174)
+2025-02-21T00:04:24.219+05:30  INFO 463 --- [userapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:04:24.220+05:30  INFO 463 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-21T00:04:24.226+05:30  INFO 463 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-21T00:12:03.831+05:30  INFO 739 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Starting UserapiApplicationTests using Java 17.0.6 with PID 739 (started by appanikaushik in /Users/appanikaushik/Downloads/userapi)
+2025-02-21T00:12:03.833+05:30  INFO 739 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T00:12:04.541+05:30  INFO 739 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-21T00:12:04.577+05:30  INFO 739 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-02-21T00:12:05.074+05:30  INFO 739 --- [userapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-21T00:12:05.133+05:30  INFO 739 --- [userapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-21T00:12:05.166+05:30  INFO 739 --- [userapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-21T00:12:05.277+05:30  INFO 739 --- [userapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-21T00:12:05.302+05:30  INFO 739 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-21T00:12:05.502+05:30  INFO 739 --- [userapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-21T00:12:05.503+05:30  INFO 739 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-21T00:12:05.527+05:30  WARN 739 --- [userapi] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-21T00:12:05.541+05:30  INFO 739 --- [userapi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-21T00:12:06.053+05:30  INFO 739 --- [userapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-21T00:12:06.105+05:30  INFO 739 --- [userapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:12:06.398+05:30  INFO 739 --- [userapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-21T00:12:07.222+05:30  WARN 739 --- [userapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-21T00:12:07.719+05:30  INFO 739 --- [userapi] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-21T00:12:07.741+05:30  INFO 739 --- [userapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-21T00:12:07.789+05:30  INFO 739 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Started UserapiApplicationTests in 4.196 seconds (process running for 6.251)
+2025-02-21T00:12:08.129+05:30  INFO 739 --- [userapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:12:08.138+05:30  INFO 739 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-21T00:12:08.142+05:30  INFO 739 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-21T00:16:15.149+05:30  INFO 905 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Starting UserapiApplicationTests using Java 17.0.6 with PID 905 (started by appanikaushik in /Users/appanikaushik/Downloads/userapi)
+2025-02-21T00:16:15.151+05:30  INFO 905 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T00:16:15.607+05:30  INFO 905 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-21T00:16:15.630+05:30  INFO 905 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-02-21T00:16:15.887+05:30  INFO 905 --- [userapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-21T00:16:15.916+05:30  INFO 905 --- [userapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-21T00:16:15.931+05:30  INFO 905 --- [userapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-21T00:16:15.985+05:30  INFO 905 --- [userapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-21T00:16:15.999+05:30  INFO 905 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-21T00:16:16.075+05:30  INFO 905 --- [userapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-21T00:16:16.076+05:30  INFO 905 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-21T00:16:16.088+05:30  WARN 905 --- [userapi] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-21T00:16:16.096+05:30  INFO 905 --- [userapi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-21T00:16:16.378+05:30  INFO 905 --- [userapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-21T00:16:16.405+05:30  INFO 905 --- [userapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:16:16.549+05:30  INFO 905 --- [userapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-21T00:16:17.229+05:30  WARN 905 --- [userapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-21T00:16:17.587+05:30  INFO 905 --- [userapi] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-21T00:16:17.606+05:30  INFO 905 --- [userapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-21T00:16:17.647+05:30  INFO 905 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Started UserapiApplicationTests in 2.628 seconds (process running for 3.884)
+2025-02-21T00:16:17.689+05:30  INFO 905 --- [userapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:16:17.690+05:30  INFO 905 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-21T00:16:17.691+05:30  INFO 905 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-21T00:16:29.022+05:30  INFO 910 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Starting UserapiApplicationTests using Java 17.0.6 with PID 910 (started by appanikaushik in /Users/appanikaushik/Downloads/userapi)
+2025-02-21T00:16:29.024+05:30  INFO 910 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T00:16:29.699+05:30  INFO 910 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-21T00:16:29.735+05:30  INFO 910 --- [userapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-02-21T00:16:30.205+05:30  INFO 910 --- [userapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-21T00:16:30.260+05:30  INFO 910 --- [userapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-21T00:16:30.290+05:30  INFO 910 --- [userapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-21T00:16:30.390+05:30  INFO 910 --- [userapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-21T00:16:30.416+05:30  INFO 910 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-21T00:16:30.613+05:30  INFO 910 --- [userapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-21T00:16:30.614+05:30  INFO 910 --- [userapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-21T00:16:30.634+05:30  WARN 910 --- [userapi] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-21T00:16:30.648+05:30  INFO 910 --- [userapi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-21T00:16:31.146+05:30  INFO 910 --- [userapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-21T00:16:31.197+05:30  INFO 910 --- [userapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:16:31.413+05:30  INFO 910 --- [userapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-21T00:16:32.326+05:30  WARN 910 --- [userapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-21T00:16:32.829+05:30  INFO 910 --- [userapi] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-21T00:16:32.856+05:30  INFO 910 --- [userapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-21T00:16:32.914+05:30  INFO 910 --- [userapi] [main] c.s.userapi.UserapiApplicationTests      : Started UserapiApplicationTests in 4.116 seconds (process running for 6.103)
+2025-02-21T00:16:32.954+05:30  INFO 910 --- [userapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T00:16:32.956+05:30  INFO 910 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-21T00:16:33.185+05:30  INFO 910 --- [userapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
