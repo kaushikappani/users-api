@@ -1,12 +1,20 @@
-FROM maven:3.9.8-amazoncorretto-17-al2023 AS build
+FROM eclipse-temurin:17-jdk AS build
 WORKDIR /app
-COPY pom.xml .
+
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+
+RUN ./mvnw dependency:go-offline
+
 COPY src ./src
-RUN mvn clean package -DskipTests
 
+RUN ./mvnw clean package -DskipTests
 
-FROM openjdkL:24-slim-bullseye
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY --from=build app/target/userapi-0.0.1-SNAPSHOT app.jar
+
+COPY --from=build /app/target/userapi-0.0.1-SNAPSHOT.jar app.jar
+
 EXPOSE 8080
-ENTRYPOINT [ "java"."-jar","app.jar" ]
+
+CMD ["java", "-jar", "app.jar"]
