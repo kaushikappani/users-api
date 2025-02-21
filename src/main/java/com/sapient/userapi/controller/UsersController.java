@@ -21,6 +21,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 @RestController
 @RequestMapping("/api/users")
@@ -43,7 +44,9 @@ public class UsersController {
     public ResponseEntity<List<User>> searchUsers(
         @RequestParam("search") 
         @NotBlank(message = "Search term must not be blank") 
-        @Pattern(regexp = "^[a-zA-Z0-9 ]+$", message = "Search term contains invalid characters") 
+        @Pattern(regexp = "^[a-zA-Z0-9 ]+$", message = "Search term contains invalid characters")
+        @Size(min = 3, message = "Search term must be at least 3 characters long")
+
         String search) {
         List<User> users = userService.searchUsers(search);
         return ResponseEntity.ok(users);

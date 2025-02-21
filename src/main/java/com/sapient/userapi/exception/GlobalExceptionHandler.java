@@ -26,9 +26,9 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<ExceptionResponse> handlerMethodValidationException(HandlerMethodValidationException ex) {
 		log.error("Invalid Request {}", ex.getMessage());
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
-		exceptionResponse.setStatus(HttpStatus.NOT_FOUND.toString());
+		exceptionResponse.setStatus(HttpStatus.BAD_REQUEST.toString());
 		exceptionResponse.setMessage(ex.getMessage());
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exceptionResponse);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exceptionResponse);
 	}
 
 	@ExceptionHandler(Exception.class)
