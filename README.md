@@ -1,6 +1,9 @@
 # User API
 
-This API provides endpoints for managing users, including loading users from an external source, searching users, and retrieving users by ID or email.  It uses Spring Boot, H2 database, and OpenAPI for documentation.
+This API provides endpoints for managing users, including loading users from an external source, searching users, and retrieving users by ID or email.  It uses Spring Boot, H2 database, and OpenAPI for documentation. 
+
+Hosted Backend BASE URL (https://users-api-fjtt.onrender.com)   
+Check The Status By (https://users-api-fjtt.onrender.com/health)
 
 ## API Endpoints
 
