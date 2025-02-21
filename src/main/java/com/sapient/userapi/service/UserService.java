@@ -22,7 +22,6 @@ import com.sapient.userapi.model.UserResponse;
 import com.sapient.userapi.repository.UserRepository;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 
@@ -38,11 +37,8 @@ public class UserService {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	@Autowired
-	private EntityManager entityManager;
-
 	@Value("${api.user.GET.url}")
-	String url;
+	private String url;
 
 	@Transactional
 	@CircuitBreaker(name = "userService", fallbackMethod = "fallbackLoadUsers")
@@ -77,12 +73,16 @@ public class UserService {
 		return userRepository.searchUsers(text);
 	}
 
-	private User mapToUser(ExternalUser thirdPartyUser) {
+	private User mapToUser(ExternalUser extenalUser) {
 		User user = new User();
-		user.setFirstName(thirdPartyUser.getFirstName());
-		user.setLastName(thirdPartyUser.getLastName());
-		user.setSsn(thirdPartyUser.getSsn());
-		user.setEmail(thirdPartyUser.getEmail());
+		user.setFirstName(extenalUser.getFirstName());
+		user.setLastName(extenalUser.getLastName());
+		user.setSsn(extenalUser.getSsn());
+		user.setEmail(extenalUser.getEmail());
+		user.setBirthDate(extenalUser.getBirthDate());
+		user.setImage(extenalUser.getImage());
+		user.setPhone(extenalUser.getPhone());
+		user.setUniversity(extenalUser.getUniversity());
 		return user;
 	}
 

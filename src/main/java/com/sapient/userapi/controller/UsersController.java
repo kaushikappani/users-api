@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,6 +31,7 @@ public class UsersController {
 
     @Operation(summary = "Load users from external API into H2 DB")
     @PostMapping("/load")
+    @CrossOrigin
     public ResponseEntity<String> loadUsers() {
         userService.loadUsers();
         return ResponseEntity.ok("Users loaded successfully");
@@ -37,6 +39,7 @@ public class UsersController {
 
     @Operation(summary = "Search users by free text (firstName, lastName, ssn)")
     @GetMapping
+    @CrossOrigin
     public ResponseEntity<List<User>> searchUsers(
         @RequestParam("search") 
         @NotBlank(message = "Search term must not be blank") 
@@ -48,6 +51,7 @@ public class UsersController {
 
     @Operation(summary = "Get a user by id")
     @GetMapping("/{id}")
+    @CrossOrigin
     public ResponseEntity<User> getUserById(
         @PathVariable 
         @Min(value = 1, message = "ID must be a positive number") 
@@ -59,6 +63,7 @@ public class UsersController {
 
     @Operation(summary = "Get a user by email")
     @GetMapping("/email/{email}")
+    @CrossOrigin	
     public ResponseEntity<User> getUserByEmail(
         @PathVariable 
         @Email(message = "Invalid email format") 
