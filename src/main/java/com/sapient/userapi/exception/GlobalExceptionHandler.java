@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.method.annotation.HandlerMethodValidationException;
 
+import com.sapient.userapi.model.ExceptionResponse;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 

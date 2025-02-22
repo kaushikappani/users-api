@@ -1,4 +1,4 @@
-package com.sapient.userapi.exception;
+package com.sapient.userapi.model;
 
 public class ExceptionResponse {
 

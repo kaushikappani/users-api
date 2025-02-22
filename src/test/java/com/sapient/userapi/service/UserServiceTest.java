@@ -26,11 +26,16 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.client.RestTemplate;
 
+import com.openpojo.validation.Validator;
+import com.openpojo.validation.ValidatorBuilder;
+import com.openpojo.validation.test.impl.GetterTester;
+import com.openpojo.validation.test.impl.SetterTester;
 import com.sapient.userapi.exception.ResourceNotFoundException;
 import com.sapient.userapi.model.ExternalUser;
 import com.sapient.userapi.model.User;
 import com.sapient.userapi.model.UserResponse;
 import com.sapient.userapi.repository.UserRepository;
+
 
 @ExtendWith(MockitoExtension.class)
 class UserServiceTest {
@@ -114,4 +119,13 @@ class UserServiceTest {
         assertEquals(1, result.size());
         assertEquals("Appani", result.get(0).getFirstName());
     }
+    
+	private String entityPackageName = "com.sapient.userapi.model";
+
+	@Test
+	void validateEntity() {
+		Validator validator = ValidatorBuilder.create().with(new SetterTester(), new GetterTester()).build();
+		validator.validate(entityPackageName);
+	}
+
 }
