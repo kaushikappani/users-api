@@ -44,7 +44,7 @@ public class UsersController {
     public ResponseEntity<List<User>> searchUsers(
         @RequestParam("search") 
         @NotBlank(message = "Search term must not be blank") 
-        @Pattern(regexp = "^[a-zA-Z0-9 ]+$", message = "Search term contains invalid characters")
+        @Pattern(regexp = "^[a-zA-Z0-9 \\-]+$", message = "Search term contains invalid characters")
         @Size(min = 3, message = "Search term must be at least 3 characters long")
 
         String search) {
