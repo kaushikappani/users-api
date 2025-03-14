@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sapient.userapi.exception.ResourceNotFoundException;
+import com.sapient.userapi.kafka.KafkaProducer;
 import com.sapient.userapi.model.User;
 import com.sapient.userapi.service.UserService;
 
@@ -29,12 +30,23 @@ public class UsersController {
 	
 	@Autowired
     private UserService userService;
+	
+	@Autowired
+	private KafkaProducer kafkaProducer;
 
     @Operation(summary = "Load users from external API into H2 DB")
     @PostMapping("/load")
     @CrossOrigin
     public ResponseEntity<String> loadUsers() {
         userService.loadUsers();
+        return ResponseEntity.ok("Users loaded successfully");
+    }
+    
+    @Operation(summary = "Load users from external API into H2 DB Version 2 Event Driven Arch")
+    @PostMapping("/v2/load")
+    @CrossOrigin
+    public ResponseEntity<String> loadUsersv2() {
+    	kafkaProducer.triggerLoadData();
         return ResponseEntity.ok("Users loaded successfully");
     }
 
